@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="2dp">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/productImage"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:scaleType="fitCenter"
+                android:paddingRight="10dp"/>
+
+            <TextView
+                android:paddingTop="4dp"
+                android:id="@+id/productName"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/productImage"
+                android:textSize="18sp"
+                android:padding="2dp" />
+
+            <TextView
+                android:id="@+id/brandName"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/productName"
+                android:layout_toRightOf="@+id/productImage"
+                android:textSize="15sp"
+                android:textStyle="italic"
+                android:padding="2dp" />
+
+            <TextView
+                android:id="@+id/origPrice"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/brandName"
+                android:layout_toRightOf="@+id/productImage"
+                android:textSize="15sp"
+                android:textStyle="italic"
+                android:padding="2dp" />
+
+            <TextView
+                android:id="@+id/finalPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/brandName"
+                android:layout_alignParentRight="true"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:paddingRight="4dp"/>
+
+            <TextView
+                android:id="@+id/discountLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/origPrice"
+                android:layout_toRightOf="@+id/productImage"
+                android:text="@string/discount_label_card_view"
+                android:textSize="15sp"
+                android:paddingBottom="4dp"/>
+
+            <TextView
+                android:id="@+id/discount"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/origPrice"
+                android:layout_toRightOf="@+id/discountLabel"
+                android:textSize="15sp"
+                android:paddingBottom="4dp"/>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

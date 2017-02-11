@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ilovezappos.krishna.pricechecker">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/MyAppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity android:name=".ProductResults">
+            <meta-data
+                android:name="AUTH_KEY_ZAPPOS"
+                android:value="@string/AUTH_KEY_ZAPPOS" />
+            <meta-data
+                android:name="URL_PROTOCOL_ZAPPOS"
+                android:value="@string/URL_PROTOCOL_ZAPPOS" />
+            <meta-data
+                android:name="URL_AUTHORITY_ZAPPOS"
+                android:value="@string/URL_AUTHORITY_ZAPPOS" />
+            <meta-data
+                android:name="URL_PATH"
+                android:value="@string/URL_PATH" />
+            <meta-data
+                android:name="URL_QUERY_PARAMETER_TERM"
+                android:value="@string/URL_QUERY_PARAMETER_TERM" />
+            <meta-data
+                android:name="URL_QUERY_PARAMETER_KEY"
+                android:value="@string/URL_QUERY_PARAMETER_KEY" />
+            <meta-data
+                android:name="URL_QUERY_PARAMETER_LIMIT"
+                android:value="@string/URL_QUERY_PARAMETER_LIMIT" />
+            <meta-data
+                android:name="URL_QUERY_PARAMETER_LIMIT_VALUE"
+                android:value="@string/URL_QUERY_PARAMETER_LIMIT_VALUE" />
+        </activity>
+        <activity android:name=".ProductPage">
+            <meta-data
+                android:name="AUTH_KEY"
+                android:value="@string/AUTH_KEY" />
+            <meta-data
+                android:name="URL_PROTOCOL"
+                android:value="@string/URL_PROTOCOL" />
+            <meta-data
+                android:name="URL_AUTHORITY"
+                android:value="@string/URL_AUTHORITY" />
+            <meta-data
+                android:name="URL_PATH"
+                android:value="@string/URL_PATH" />
+            <meta-data
+                android:name="URL_QUERY_PARAMETER_TERM"
+                android:value="@string/URL_QUERY_PARAMETER_TERM" />
+            <meta-data
+                android:name="URL_QUERY_PARAMETER_KEY"
+                android:value="@string/URL_QUERY_PARAMETER_KEY" />
+            <meta-data
+                android:name="URL_QUERY_PARAMETER_LIMIT"
+                android:value="@string/URL_QUERY_PARAMETER_LIMIT" />
+            <meta-data
+                android:name="URL_QUERY_PARAMETER_LIMIT_VALUE"
+                android:value="@string/URL_QUERY_PARAMETER_LIMIT_VALUE" />
+
+        </activity>
+
+    </application>
+
+</manifest>

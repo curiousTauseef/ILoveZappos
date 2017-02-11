@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">ILoveZappos</string>
+    <string name="welcome_message_main_activity">Welcome to Zappos!</string>
+    <string name="enter_value_label_main_activity">"Enter the product name :"</string>
+    <string name="submit_button_main_activity">Search</string>
+    <string name="toast_string_main_activity">Search for products</string>
+    <string name="no_products_alert_product_results_activity">"Sorry no products were found. Try searching again!"</string>
+    <string name="alert_ok_button_product_results_activity">OK</string>
+    <string name="no_internet_toast">"Please connect to internet and try again!"</string>
+    <string name="rest_call_failed">\"Error requesting details. Please restart the app.\"</string>
+    <string name="original_price_as_final_price_label_product_page_activity">"Price :"</string>
+    <string name="original_price_label_product_page_activity">"Original Price :"</string>
+    <string name="share_product_url_text_product_page_activity">\"Check out this cool product on Zappos! %1$s\"</string>
+    <string name="share_via_product_page_activity">Share via</string>
+    <string name="exact_product_found_label_product_page_activity">\"\"</string>
+    <string name="similar_product_found_product_page_activity">\"\"</string>
+    <string name="alert_title_product_results_activity">Oops!</string>
+    <string name="share_me_button_product_page">Share</string>
+    <string name="navigate_button_product_page">Take me there!</string>
+    <string name="product_name_textview_product_page">Product Name : </string>
+    <string name="brand_name_textview_product_page">Brand Name : </string>
+    <string name="original_price_textview_product_page">Original price : </string>
+    <string name="discount_textview_product_page">Discount : </string>
+    <string name="final_price_textview_product_page">Final Price : </string>
+    <string name="discount_label_card_view">"Hurry "</string>
+    <string name="discount_value_recycler_view_adapter_activity">\" Off!\"</string>
+</resources>
